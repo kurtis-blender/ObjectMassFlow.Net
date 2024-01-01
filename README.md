@@ -1,2 +1,2 @@
 # Huttime.net
-Huttime.net is Kurtis Blender's Depository and Action Zone
+Huttime.net is the working title of Kurtis Blender's Depository and Action Zone
