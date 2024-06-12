@@ -1,0 +1,43 @@
+* {background-color: black;}
+body {color: white;}
+a {color: red;} 
+.body {font-family: "Bembo";}
+.i {font-family: "Bembo Italic";}
+
+.header{
+    text-align: center;
+    font-family: "Bembo Bold";
+    text-decoration: red;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 0.25fr 1.25fr 0.25fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.about{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: "Bembo";
+    font-size: 1.2em;
+}
+
+@font-face {
+        font-family: "Bembo";
+        src: url(Fonts/BemboStd.woff2);
+}
+@font-face {
+    font-family: "Bembo Bold";
+    src: url(Fonts/BemboStd-Bold.woff2);
+}
+@font-face {
+    font-family: "Bembo Italic";
+    src: url(Fonts/BemboStd-Italic.woff2);
+}
+@font-face {
+    font-family: "Bembo SemiBold Italic";
+    src: url(Fonts/BemboStd-SemiboldItalic.woff2);
+}

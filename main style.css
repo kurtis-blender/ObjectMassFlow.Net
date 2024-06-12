@@ -1,0 +1,115 @@
+* {background-color: black;}
+body {color: white;}
+a {color: red;}
+strong {font-family: "Bembo Bold";}
+
+.header {
+    text-align: center;
+    font-family: "Bembo Bold";
+    text-decoration: underline red;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 0.35fr 0.37fr 505px 0.107fr;
+    grid-template-rows: 0.5fr 0.45fr 0.4fr;
+    gap: 5px;
+}
+
+.roots {
+    border: 1px solid white;
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 4px;
+    font-family: "Bembo";
+    font-size: 1.1rem;
+}
+
+.image {
+    max-width: 498px;
+}
+
+.pages {
+    border: 1px solid white;
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0px;
+    align-content: start;
+    font-family: "Bembo ExtraBold Italic";
+    font-size: 1.3rem;
+}
+
+.description {
+    border: 1px solid white;
+    grid-column: 2;
+    grid-row: 2;
+    padding-inline-start: 20px;
+    padding-inline-end: 5px;
+    align-self: end;
+    font-family: "Bembo";
+    font-size: 1.1rem;
+    margin-bottom: auto;
+}
+
+.links {
+    border: 1px solid white;
+    grid-column: 2;
+    grid-row: 3;
+    padding-inline-start: 20px;
+    align-self: start;
+    font-family: "Bembo";
+    font-size: 1.1rem;
+}
+
+@font-face {
+    font-family: "Bembo Bold";
+    src: url(Fonts/BemboStd-Bold.woff2);
+}
+@font-face {
+        font-family: "Bembo";
+        src: url(Fonts/BemboStd.woff2);
+}
+@font-face {
+    font-family: "Bembo SemiBold Italic";
+    src: url(Fonts/BemboStd-SemiboldItalic.woff2);
+}
+@font-face {
+    font-family: "Bembo Bold Italic";
+    src: url(Fonts/BemboStd-BoldItalic.woff2);
+}
+@font-face {
+    font-family: "Bembo ExtraBold Italic";
+    src: url(Fonts/BemboStd-ExtraBoldItalic.woff2);
+}
+
+
+
+@media all and (max-width: 600px) {
+    .content {
+        display: grid;
+        grid-template-columns:  0.25fr 1fr 0.25fr;
+        grid-template-rows: 0.5fr 0.25fr 0.25fr 0.25fr;
+        gap: 5px;
+    }
+    .roots {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .pages {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .description {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .links {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}
