@@ -40,6 +40,10 @@ strong {font-family: "Bembo Bold";}
     font-size: 1.3rem;
 }
 
+.list {
+    margin-top: 10px;
+}
+
 .description {
     border: 1px solid white;
     grid-column: 2;
