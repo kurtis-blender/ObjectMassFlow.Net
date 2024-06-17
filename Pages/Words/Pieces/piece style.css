@@ -45,6 +45,15 @@ em {font-family: "Bembo Italic";}
     margin-left: auto;
 }
 
+.poem {
+    font-family: "Bembo";
+    font-size: 1.15rem;
+    max-width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .tags {
     text-align: center;
     font-family: "Bembo";

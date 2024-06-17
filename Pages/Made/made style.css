@@ -9,6 +9,28 @@ em {font-family: "Bembo Italic";}
     font-family: "Bembo Bold";
 }
 
+
+.return {
+    font-family: "Bembo Bold";
+    font-size: 1.15rem;
+    text-decoration: underline red;
+    margin-right: auto;
+}
+
+.pagetitle {
+    text-align: center;
+    font-family: "Bembo Bold";
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 27px;
+}
+
+.titlediv {
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+
 .image {
     max-width: 500px;
     max-height: 500px;
