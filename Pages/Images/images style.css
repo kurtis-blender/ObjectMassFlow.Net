@@ -1,4 +1,7 @@
-* {background-color: black;}
+* {
+    background-color: black;
+    box-sizing: border-box;
+}
 body {color: white;}
 a {color: red;}
 strong {font-family: "Bembo Bold";}
@@ -15,8 +18,9 @@ em {font-family: "Bembo Italic";}
     gap: 5px;
 }
 
+
 .image {
-    max-width: 375px;   
+    width: 100%;
     max-height: 100%;
 }
 
@@ -84,4 +88,109 @@ src: url(../../Fonts/BemboStd-BoldItalic.woff2);
 @font-face {
 font-family: "Bembo ExtraBold Italic";
 src: url(../../Fonts/BemboStd-ExtraBoldItalic.woff2);
+}
+
+@media only screen and (max-width: 1125px) {
+
+    .content {
+        grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    }
+
+    .image {
+        width: 100%;
+        max-height: 100%;
+    }
+    .image12 {
+        grid-column: 1;
+    }
+    
+    .image11 {
+        grid-column: 2;
+    }
+    
+    .image10 {
+        grid-column: 3;
+    }
+    .image9 {
+        grid-column: 1;
+    }
+    .image8 {
+        grid-column: 2;
+    }
+    .image7 {
+        grid-column: 3;
+    }
+    .image6 {
+        grid-column: 1;
+    }
+    .image5 {
+        grid-column: 2;
+    }
+    .image4 {
+        grid-column: 3;
+    }
+    
+    .image3 {
+        grid-column: 1;
+    }
+    .image2 {
+        grid-column: 2;
+    }
+    .image1 {
+        grid-column: 3;
+    }
+    
+}   
+
+@media only screen and (max-width: 750px) {
+
+    .content {
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+
+    .image {
+        width: 100%;
+        max-height: 100%;
+    }
+    .image12 {
+        grid-column: 1;
+    }
+    
+    .image11 {
+        grid-column: 2;
+    }
+    
+    .image10 {
+        grid-column: 1;
+    }
+    .image9 {
+        grid-column: 2;
+    }
+    .image8 {
+        grid-column: 1;
+    }
+    
+    .image7 {
+        grid-column: 2;
+    }
+    .image6 {
+        grid-column: 1;
+    }
+    .image5 {
+        grid-column: 2;
+    }
+    .image4 {
+        grid-column: 1;
+    }
+    
+    .image3 {
+        grid-column: 2;
+    }
+    .image2 {
+        grid-column: 1;
+    }
+    .image1 {
+        grid-column: 2;
+    }
+    
 }

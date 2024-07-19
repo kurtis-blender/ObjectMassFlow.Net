@@ -1,4 +1,4 @@
-* {background-color: black;}
+    * {background-color: black;}
 body {color: white;}
 a {color: red;}
 strong {font-family: "Bembo Bold";}
@@ -26,7 +26,8 @@ em {font-family: "Bembo Italic";}
 }
 
 .image {
-    max-width: 550px;
+    margin-top: 7px;
+    max-width: 500px;
     max-height: 550px;
 }
 
@@ -61,10 +62,7 @@ em {font-family: "Bembo Italic";}
     font-size: 1.15rem;
     font-family:"Bembo";
     text-align: center;
-    margin-top: auto;
-    margin-bottom:auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 
 }
 
@@ -72,10 +70,7 @@ em {font-family: "Bembo Italic";}
     grid-row: 3;
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     font-family: "Bembo";
     text-align: center;
 }
@@ -110,4 +105,13 @@ src: url(../../../Fonts/BemboStd-BoldItalic.woff2);
 @font-face {
 font-family: "Bembo ExtraBold Italic";
 src: url(../../../Fonts/BemboStd-ExtraBoldItalic.woff2);
+}
+
+@media only screen and (max-width: 1000px) {
+    .image {
+        max-width: 100%;
+    }
+    .secondaryimage {
+        max-width: 60%;
+    }
 }

@@ -21,50 +21,45 @@ h1 {font-size: 2.5rem;}
 
 .content {
     display: grid;
-    grid-template-columns: 0.24fr 0.48fr 0.48fr 0.24fr;
-    grid-template-rows: 0.5fr 0.02fr 0.05fr 0.3fr;
+    grid-template-columns: 0.5fr 0.5fr ;
     gap: 5px;
 }
 
-.image {
-    max-width: 500px;
-}
-
 .image1 {
-    grid-column: 2;
+    max-width: 500px;
+    grid-column: 1;
     grid-row: 1;
+    margin-left: auto;
+    margin-top: 7px;
 }
 
 .image2 {
-    grid-column: 3;
-    grid-row: 1;
-    text-align: right;
-    font-family: "Bembo";
+    max-width: 500px;
+    grid-column: 2;
+    margin-right: auto;
+    margin-top: 7px;
 }
 
 .title {
     font-family: "Bembo Bold";
     color: red;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
 .note {
-    grid-column: 4;
-    grid-row: 1;
+    grid-column: 2;
     font-family: "Bembo";
-    margin-bottom: auto;
+    margin: auto;
 }
 
 .writing {
     font-family: "Bembo";
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
     text-align: center;
     margin-bottom: 0.05fr;
     margin-top: auto;
@@ -72,14 +67,19 @@ h1 {font-size: 2.5rem;}
 }
 
 .image3 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 4;
-    text-align: center;
-    place-items: top;
-    font-family: "Bembo";
+    max-width: 400px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: auto;    
 }
 
+.note2 { 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    font-family: "Bembo";
+    margin: auto;
+    }
 
 .tags {
     text-align: center;
@@ -110,4 +110,28 @@ src: url(../../../Fonts/BemboStd-BoldItalic.woff2);
 @font-face {
 font-family: "Bembo ExtraBold Italic";
 src: url(../../../Fonts/BemboStd-ExtraBoldItalic.woff2);
+}
+
+@media only screen and (max-width: 1000px) {
+    .image1 {
+        max-width: 100%;
+    }
+    .image2 {
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .image1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: auto;
+    }
+    .image2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin:auto;
+    }
+    .image3 {
+        max-width: 75%;
+    }
 }
