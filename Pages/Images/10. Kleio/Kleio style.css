@@ -20,21 +20,22 @@ em {font-family: "Bembo Italic";}
 
 .content {
     display: grid;
-    grid-template-columns: 0.2fr 0.6fr 0.2fr;
+    grid-template-columns: 1fr;
 }
 
 .image1 {
     margin-left: auto;
     margin-right: auto;
-    max-height: 600px;
-    grid-column: 2;
+    max-height: 500px;
+    grid-column: 1;
+    margin-top: 7px;
 }
 
 .image2 {
     margin-left: auto;
     margin-right: auto;
     max-width: 350px;
-    grid-column: 2;
+    grid-column: 1;
 }
 
 .title {
@@ -43,7 +44,7 @@ em {font-family: "Bembo Italic";}
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
-    grid-column: 2;
+    grid-column: 1;
     font-size: 2.5rem;
 }
 
@@ -53,7 +54,7 @@ em {font-family: "Bembo Italic";}
     text-align: center;
     margin-bottom: 0.05fr;
     margin-top: auto;
-    grid-column: 2;
+    grid-column: 1;
     font-size: 1.15rem;
 }
 
@@ -63,13 +64,13 @@ em {font-family: "Bembo Italic";}
     text-align: center;
     margin-bottom: 0.05fr;
     margin-top: auto;
-    grid-column: 2;
+    grid-column: 1;
     font-size: 1.15rem;
 }
 
 .note {
     text-align: center;
-    grid-column: 2;
+    grid-column: 1;
     font-family: "Bembo";
     margin-top: 5px;
     margin-bottom: 5px  ;
@@ -104,4 +105,11 @@ src: url(../../../Fonts/BemboStd-BoldItalic.woff2);
 @font-face {
 font-family: "Bembo ExtraBold Italic";
 src: url(../../../Fonts/BemboStd-ExtraBoldItalic.woff2);
+}
+
+
+@media only screen and (max-width: 500px) {
+    .image1 {
+        width: 100%;
+    }
 }
