@@ -92,3 +92,17 @@ src: url(../../../Fonts/BemboStd-BoldItalic.woff2);
 font-family: "Bembo ExtraBold Italic";
 src: url(../../../Fonts/BemboStd-ExtraBoldItalic.woff2);
 }
+
+@media only screen and (max-width: 750px) {
+    h1 {
+        margin-top: 12px;
+        margin-bottom: 5px;
+        font-size: 1.7rem;
+        font-family: "Bembo";
+    }
+}
+@media only screen and (max-width: 400px) {
+    .headerimage {
+        max-width: 100%;
+    }
+}
