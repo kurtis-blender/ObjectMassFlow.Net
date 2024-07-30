@@ -19,10 +19,11 @@ em {font-family: "Bembo Italic";}
 }
 
 .image {
-    max-width: 700px;
+    max-width: 650px;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 7px;
 }
 
 .title {
@@ -47,22 +48,23 @@ em {font-family: "Bembo Italic";}
 
 .pockets {
     display: grid;
-    grid-template-columns: 0.5fr 0.1fr 0.1fr 0.1fr 0.5fr;
+    grid-template-columns: 0.5fr 0.1fr 0.5fr;
     gap: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
 }
 
 .pockets1 {
-    grid-column: 2;
+    grid-column: 1;
     max-height: 250px;
+    margin-left: auto;
 }
 
 .pockets2 {
-    grid-column: 3;
+    grid-column: 2;
     max-height: 250px;
 }
 .pockets3 {
-    grid-column: 4;
+    grid-column: 3;
     max-height: 250px;
 }
 .tags {
@@ -95,4 +97,34 @@ src: url(../../../Fonts/BemboStd-BoldItalic.woff2);
 @font-face {
 font-family: "Bembo ExtraBold Italic";
 src: url(../../../Fonts/BemboStd-ExtraBoldItalic.woff2);
+}
+
+@media only screen and (max-width: 660px) {
+    .image {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        margin-top: 12px;
+        margin-bottom: 5px;
+        font-size: 1.7rem;
+        font-family: "Bembo";
+    }
+}
+
+@media only screen and (max-width: 497px) {
+    .pockets {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .pockets1 {
+        max-width: 100%;
+    }
+    .pockets2 {
+        max-width: 100%;
+    }
+    .pockets3 {
+        max-width: 100%;
+    }
 }
