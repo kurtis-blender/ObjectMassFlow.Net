@@ -30,69 +30,74 @@ em {font-family: "Bembo Italic";}
     font-size: 2.5rem;
     color: red;
     text-align: center;
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-column-end: 5; 
-    grid-row: 3;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .content {
     display: grid;
-    grid-template-columns: 0.6fr 0.2fr 0.2fr 0.2fr 0.2fr 0.05fr;
-    grid-template-rows: 0.4fr 0.4fr 0.1fr 0.1fr;
+    grid-template-columns: 0.5fr 300px 300px 0.5fr;
+    grid-template-rows: 0.4fr 0.4fr;
     gap: 5px;
 }
 
 .image1 {
-    max-width: 350px;
-    grid-column: 2;
+    max-width: 300px;
+    grid-column: 1;
     grid-row: 1;
+    margin-left: auto;
+    margin-top: 7px;
 }
 .image2 {
-    max-width: 350px;
-    grid-column: 3;
+    max-width: 300px;
+    grid-column: 2;
     grid-row: 1;
+    margin-top: 7px;
 }
 .image3 {
-    max-width: 350px;
-    grid-column: 4;
+    max-width: 300px;
+    grid-column: 3;
     grid-row: 1;
+    margin-top: 7px;
 }
 .image4 {
-    max-width: 350px;
-    grid-column: 5;
+    max-width: 300px;
+    grid-column: 4;
     grid-row: 1;
+    margin-top: 7px;
 }
 .image5 {
-    max-width: 350px;
-    grid-column: 2;
+    max-width: 300px;
+    grid-column: 1;
     grid-row: 2;
+    margin-left: auto;
 }
 .image6 {
-    max-width: 350px;
-    grid-column: 3;
+    max-width: 300px;
+    grid-column: 2;
     grid-row: 2;
 }
 .image7 {
-    max-width: 350px;
-    grid-column: 4;
+    max-width: 300px;
+    grid-column: 3;
     grid-row: 2;
 }
 .gif {
-    max-width: 350px;
-    grid-column: 5;
+    max-width: 300px;
+    grid-column: 4;
     grid-row: 2;
 }
 
 .description {
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-column-end: 5;
-    grid-row: 4;
     text-align: center;
     font-family: "Bembo";
     font-size: 1.25rem;
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .tags {
@@ -124,4 +129,167 @@ src: url(../../../Fonts/BemboStd-BoldItalic.woff2);
 @font-face {
 font-family: "Bembo ExtraBold Italic";
 src: url(../../../Fonts/BemboStd-ExtraBoldItalic.woff2);
+}
+
+
+@media only screen and (max-width: 1225px) {
+    .content {
+        display: grid;
+        grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+    }
+    .image1 {
+        max-width: 100%;
+    }
+    .image2 {
+        max-width: 100%;
+    }
+    .image3 {
+        max-width: 100%;
+    }
+    .image4 {
+        max-width: 100%;
+    }
+    .image5 {
+        max-width: 100%;
+    }
+    .image6 {
+        max-width: 100%;
+    }
+    .image7 {
+        max-width: 100%;
+    }
+    .gif {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .content {
+        display: grid;
+        grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr;
+        gap: 5px;
+    }
+    .image1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 1;
+        max-width: 100%;
+    }
+    .image2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row: 1;
+        max-width: 100%;
+    }
+    .image3 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row: 1;
+        max-width: 100%;
+    }
+    .image4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 2;
+        max-width: 100%;
+        margin-top: 0px;
+    }
+    .image5 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row: 2;
+        max-width: 100%;
+    }
+    .image6 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row: 2;
+        max-width: 100%;
+    }
+    .image7 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row: 3;
+        max-width: 100%;
+    }
+    .gif {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row: 3;
+        max-width: 100%;
+    }
+    .title {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    .description {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
+        gap: 5px;
+    }
+    .image1 {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 100%;
+    }
+    .image2 {
+        grid-column: 2;
+        grid-row: 1;
+        max-width: 100%;
+    }
+    .image3 {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 100%;
+        margin-top: 0px;
+    }
+    .image4 {
+        grid-column: 2;
+        grid-row: 2;
+        max-width: 100%;
+        margin-top: 0px;
+    }
+    .image5 {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 100%;
+    }
+    .image6 {
+        grid-column: 2;
+        grid-row: 3;
+        max-width: 100%;
+    }
+    .image7 {
+        grid-column: 1;
+        grid-row: 4;
+        max-width: 100%;
+    }
+    .gif {
+        grid-column: 2;
+        grid-row: 4;
+        max-width: 100%;
+    }
+    .title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .description {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    h1 {
+        margin-top: 12px;
+        margin-bottom: 5px;
+        font-size: 1.7rem;
+        font-family: "Bembo";
+    }
 }

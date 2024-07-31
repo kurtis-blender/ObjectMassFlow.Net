@@ -31,8 +31,8 @@ em {font-family: "Bembo Italic";}
     font-size: 2.5rem;
     color: red;
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .description {
@@ -44,6 +44,7 @@ em {font-family: "Bembo Italic";}
     font-family: "Bembo";
     font-size: 1.25rem;
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .pockets {
