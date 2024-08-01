@@ -73,6 +73,9 @@ src: url(../../Fonts/BemboStd-SemiboldItalic.woff2);
         font-size: 1.7rem;
         font-family: "Bembo";
     }
+    .title {
+        font-family: "Bembo";
+    }
 }
 
 @media only screen and (max-width: 510px) {

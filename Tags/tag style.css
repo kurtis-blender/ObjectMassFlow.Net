@@ -97,6 +97,9 @@ a {color: red;}
         font-size: 1.7rem;
         font-family: "Bembo";
     }
+    .title {
+        font-family: "Bembo";
+    }
 }
 
 @media only screen and (max-width: 510px) {
